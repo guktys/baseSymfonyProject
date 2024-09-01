@@ -12,4 +12,7 @@
     <h1>Hi it’s test with form</h1>
     {% form_theme form 'bootstrap_5_layout.html.twig' %}
     {{ form(form) }}
+    {{ errors }}
+    <br>
+    {{ form(arrayParamsForm) }}
 {% endblock %}
