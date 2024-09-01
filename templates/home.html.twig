@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <h1>Hi it’s test with form</h1>
+    {% form_theme form 'bootstrap_5_layout.html.twig' %}
+    {{ form(form) }}
+{% endblock %}
