@@ -26,6 +26,7 @@ class ArrayParamsType extends AbstractType
                 'label' => 'Name', // Метка для поля.
                 'data' => $options['formData']['name'] ?? '', // Значение по умолчанию.
                 'required' => false, // Поле не обязательно для заполнения.
+                'attr' => ['placeholder' => 'Enter your name...'], // Атрибуты для поля.
                 'constraints' => [
                     new Assert\NotBlank([
                         'message' => 'Name should not be empty.', // Сообщение при ошибке.
